@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import PostCard from '../components/post-card/post-card';
 import SEO from '../components/seo';
@@ -11,12 +11,12 @@ const Tags = ({ pageContext, data }: any) => {
 
   return (
     <Layout>
-      <SEO title={tag} description={`A collection of ${totalCount} post`} />
+      <SEO title={tag} description={`A collection of ${ totalCount } post`} />
 
       <TagPostsWrapper>
         <TagPageHeading>
           <TagName>{tag}</TagName>
-          {`A collection of ${totalCount} post`}
+          {`A collection of ${ totalCount } post`}
         </TagPageHeading>
         {edges.map(({ node, index }: any) => (
           <PostCard
