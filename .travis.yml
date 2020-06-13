@@ -8,8 +8,11 @@ cache:
     - .cache
     - node_modules
 install:
-  - npm install
+  - npm ci
 script:
   - npm run build --prefix-paths
+git:
+  depth: 25
+  quiet: true
   on:
     branch: master

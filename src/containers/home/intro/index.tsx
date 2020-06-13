@@ -64,7 +64,7 @@ const Intro: React.FunctionComponent<IntroProps> = () => {
       </IntroImage>
       <IntroInfo>
         <IntroTitle>
-          Hey! I’m <b>{author}</b>
+          Hola! I’m <b>{author}</b>
         </IntroTitle>
         <Desciption>{about}</Desciption>
         <SocialProfile items={SocialLinks} />
